@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VisioPriem v1.0", "VisioPriem v1.0.vbproj", "{047A706E-0807-4128-BDCD-DE052C057F1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D00706E0-9C5E-4013-81E9-37D6883779DD}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+		My Project\Resources.resx = My Project\Resources.resx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{047A706E-0807-4128-BDCD-DE052C057F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047A706E-0807-4128-BDCD-DE052C057F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047A706E-0807-4128-BDCD-DE052C057F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047A706E-0807-4128-BDCD-DE052C057F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E7D8986-3A14-48E0-AFF1-EE034E862761}
+	EndGlobalSection
+EndGlobal
