@@ -8,9 +8,7 @@
         WHERE lh.area IN ('REP', 'PAH') AND
               lh.locn_class IN ('R', 'P') AND
               lh.lvl IN ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H')
-     GROUP BY lh.lvl
-UNION ALL
-       SELECT 'Итого:', NULL, NULL, NULL FROM dual
+     GROUP BY ROLLUP(lh.lvl)
 UNION ALL
        SELECT lh.area,
               NULL,

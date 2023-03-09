@@ -102,22 +102,17 @@ Public Class Form1
 
         orarec.Open(My.Resources.sql_SORTER, oraconn)
 
-        OKR_sum = 0
-        LPN_sum = 0
-
         Do Until orarec.EOF
-            If orarec.Fields(0).Value <> "Итого:" Then
+            If Not IsDBNull(orarec.Fields(0).Value) Then
                 DataGridView_SORTER.Rows.Add(orarec.Fields(0).Value,
                                              orarec.Fields(1).Value,
                                              orarec.Fields(2).Value,
                                              orarec.Fields(3).Value)
-                OKR_sum = OKR_sum + orarec.Fields(2).Value
-                LPN_sum = LPN_sum + orarec.Fields(3).Value
             Else
-                DataGridView_SORTER.Rows.Add("Итого:",
+                DataGridView_SORTER.Rows.Add("Всього:",
                                              "",
-                                             OKR_sum,
-                                             LPN_sum)
+                                             orarec.Fields(2).Value,
+                                             orarec.Fields(3).Value)
             End If
             orarec.MoveNext()
         Loop
